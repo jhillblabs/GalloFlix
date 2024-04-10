@@ -1,0 +1,10 @@
+Configurar Git Local:
+git config --global user.name jhillblabs
+git config --global user.email jhilzinhavendito@gamil.com
+
+Criar um projeto MVC
+dotnet new mvc -o GalloFlix
+
+Para executar o projeto:
+cd GalloFlix
+dotnet watch run
