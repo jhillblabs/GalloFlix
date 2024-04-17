@@ -12,3 +12,18 @@ dotnet sln add GalloFlix\GalloFlix.csproj
 
 
 --dotnet build
+
+-
+Criar as classes de dados - Pasta Models
+
+Instalar os Pacotes necessários:
+    Shift + Ctrl + P -> Nuget Gallery
+    Pesquisar e Instalar:
+        EntityframeworkCore
+        EntityframeworkCore.Design
+        EntityframeworkCore.Tools
+        Pomelo
+
+Criar uma pasta Data - AppDbContext
+
+
