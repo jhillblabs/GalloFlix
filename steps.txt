@@ -35,7 +35,8 @@ dotnet-aspnet-codegenerator  -->
 dotnet tool install -g dotnet-aspnet-codegenerator --version 8.0.1
 
 Criar um controller - CRUD:
-dotnet-aspnet-codegenerator controller -name GenresController -m Genre -dc AppDbContext --outDir Controllers -udl
+dotnet-aspnet-codegenerator controller -name GenresController -m Genre -dc AppDbContext -outDir Controllers -udl
+dotnet-aspnet-codegenerator controller -name MoviesController -m Movie -dc AppDbContext -outDir Controllers -udl
 
 Instalar Pacotes:
     Microsoft.VisualStudio.Web.CodeGeneration.Design
