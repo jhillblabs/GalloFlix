@@ -8,7 +8,7 @@ public class Genre
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    public sbyte Id { get; set; }
+    public byte Id { get; set; }
 
     [Display(Name = "Nome")]
     [Required(ErrorMessage = "Por favor, informe o Nome")]
