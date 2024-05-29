@@ -20,9 +20,9 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         var movies = _context.Movies
-        .Include(m => m.Genres)
-        .ThenInclude(mg => mg.Genre)
-        .ToList();
+            .Include(m => m.Genres)
+            .ThenInclude(mg => mg.Genre)
+            .ToList();
         return View(movies);
     }
 

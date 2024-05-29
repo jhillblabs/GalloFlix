@@ -14,7 +14,7 @@
             <div class="col">
                 <div class="card shadow-sm cursor-pointer">
                     <img src="@movie.Image" class="card-img-top"
-                        width="100%" height="300" alt="@movie.Title"/>
+                        width="100%" height="300" alt="@movie.Title" />
                     <div class="card-body">
                         <h5 class="card-title">@movie.Title</h5>
                         <p>@string.Join(", ", movie.Genres.Select(mv => mv.Genre.Name))</p>

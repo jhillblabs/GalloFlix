@@ -10,13 +10,13 @@ public class AppDbContext : IdentityDbContext
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
     {
     }
-
+    
     public DbSet<AppUser> AppUsers { get; set; }
     public DbSet<Genre> Genres { get; set; }
     public DbSet<Movie> Movies { get; set; }
     public DbSet<MovieGenre> MovieGenres { get; set; }
 
-    // FluenteAPI
+    // FluentAPI
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
@@ -56,7 +56,7 @@ public class AppDbContext : IdentityDbContext
             }
         };
         builder.Entity<IdentityRole>().HasData(roles);
-        // IdentityUser
+        // User
         List<IdentityUser> users = new()
         {
             new IdentityUser()
@@ -72,8 +72,8 @@ public class AppDbContext : IdentityDbContext
             new IdentityUser()
             {
                 Id = Guid.NewGuid().ToString(),
-                Email = "user@galloflix.com",
-                NormalizedEmail = "USER@GALLOFLIX.COM",
+                Email = "user@gmail.com",
+                NormalizedEmail = "USER@GMAIL.COM",
                 UserName = "User",
                 NormalizedUserName = "USER",
                 LockoutEnabled = true,
@@ -100,8 +100,8 @@ public class AppDbContext : IdentityDbContext
             {
                 AppUserId = users[1].Id,
                 Name = "Fulaninho",
-                Birthday = DateTime.Parse("24/08/2006")
-            }
+                Birthday = DateTime.Parse("08/05/2000")
+            },
         };
         builder.Entity<AppUser>().HasData(appUsers);
         // Perfil Usuário
